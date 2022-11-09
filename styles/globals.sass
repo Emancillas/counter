@@ -1,0 +1,32 @@
+@import '/styles/mixins'
+@import '/styles/colors'
+
+
+*
+  margin: 0
+  box-sizing: border-box
+  padding: 0
+
+body
+  font-size: 62.5% 
+  color: white
+  background: #536976
+  background: -webkit-linear-gradient(to right, #292E49, #536976)
+  background: linear-gradient(to right, #292E49, #536976)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: fixed
+
+h1
+  font: bold 8rem 'Droid Sans', Arial, sans-serif
+  @include phone
+    font-size: 3rem
+h2
+  font-size: 2.2rem
+h3
+  font-size: 1.6rem
+  text-transform: uppercase
+  @include phone
+    font-size: 0.8rem
+p
+  font-size: 1.6rem

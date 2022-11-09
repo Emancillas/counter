@@ -1,0 +1,24 @@
+@import '/styles/mixins'
+
+.Clock
+    display: grid
+    grid-auto-flow: column
+    overflow: hidden
+    @include centerGrid
+    height: 30vh
+    padding: 1rem
+    @include phone
+        width: 100%
+        padding: 0.5rem
+    
+    
+.dots
+    display: flex
+    align-items: flex-start
+    height: 55%
+    width: 30px
+    font-size: 5rem
+    @include phone
+        font-size: 3rem
+        height: 50%
+        width: 10px
